@@ -1,0 +1,133 @@
+/* styles.css */
+
+body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	background-color: azure;
+	h2 {
+		color: #1c8302;
+		text-align: center;
+	}	
+  }
+  
+  header {
+	background-color: #611616;
+	color: white;
+	padding: 1px;
+	text-align: center;
+  }
+  
+  main {
+	flex: 1;
+	padding: 20px;
+  }
+
+  /* Estilos para los selectores */
+select {
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	font-size: 16px;
+	width: 100%;
+	appearance: none; /* Ocultar el selector nativo */
+  }
+  
+  /* Flecha personalizada para el selector */
+  select::-ms-expand {
+	display: none;
+  }
+  
+  select::-ms-value {
+	display: none;
+  }
+  
+  /* Flecha personalizada para Chrome, Firefox, Safari */
+  select:not([size]):not([multiple]) {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cud3Mvb3JnL2NvbnRvMy9zdmciIHZpZXdBox0gMjAgMjAgYXJpYS1oaWRkZW49InRydWUiPjxwYXRoIGQ9Ik03IDlOIDMgNSAzIDExIiBmaWxsPSIjNjY2NjY2Ii8+PC9zdmc+);
+	background-repeat: no-repeat;
+	background-position-x: calc(100% - 15px);
+	background-position-y: center;
+	background-color: #4CAF50;
+	color: rgb(255, 254, 170);
+	box-shadow: #611616 2px 2px 5px;
+  }
+  
+  section {
+	margin-bottom: 20px;
+  }
+  
+  form {
+	display: flex;
+	flex-direction: column;
+  }
+  
+  label {
+	margin-bottom: 5px;
+  }
+  
+  button {
+	margin-top: 1px;
+	padding: 10px;
+	width: 200px;
+	align-self: center;
+	background-color: #611616;
+	color: white;
+	border-radius: 10px;
+	cursor: pointer;
+	box-shadow: #4CAF50 2px 2px 5px;
+  }
+
+  #pokemon-result {
+	background-color: #ffef9e;
+	box-shadow: #611616 2px 2px 5px;
+	height: 150px;
+	padding: 20px;
+	text-align: center;
+	border-radius: 25px;
+  }
+
+  #your-created-pokemon {
+	border: 1px solid #ccc;
+	padding: 10px;
+  }
+  
+  #pokemon-image {
+	max-width: 200px;
+	margin: 0 auto;
+  }
+  
+  #pokemon-name {
+	font-size: 24px;
+	font-weight: bold;
+	margin-top: 10px;
+  }
+
+  container {
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 20px;
+  }
+  
+  /* Estilo para pantallas pequeñas (móviles) */
+  @media (max-width: 768px) {
+	.container {
+	  padding: 10px;
+	}
+  
+	/* Otros estilos específicos para móviles */
+	.elemento-que-quiero-ocultar-en-moviles {
+	  display: none;
+	}
+  }
+  
+  /* Estilo para tablets */
+  @media (min-width: 769px) and (max-width: 1024px) {
+	/* Estilos específicos para tablets */
+  }
