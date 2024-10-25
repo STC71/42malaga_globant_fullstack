@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TripRecomendator - Encuentra tu próximo viaje</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <script type="importmap">
+        {
+          "imports": {
+            "@google/generative-ai": "https://esm.run/@google/generative-ai"
+          }
+        }
+      </script>
+
+</head>
+<body>
+    <header>
+        <h1>TripRecomendator</h1>
+        <nav>
+            </nav>
+    </header>
+
+
+        <main>
+
+            <br><br><br><br>
+
+            <div id="app">
+                <div class="bigdiv">
+                    <div id="content">
+                        <div class="basic_box">
+                            <div class="inside_box_two">
+                                <p>Your destiny?<br><br> 
+                                    <input type="text" id="promp1" class="input_on_div" placeholder="Enter first prompt">
+                                </p>
+                                <button id="generate-button" class="chat-form-button">Surprise me</button><br><br>
+                            </div>
+                        </div>
+                        <div id="response-container" class="inside_box" style="display: none;"></div>
+                    </div>
+                </div>
+            </div>
+            
+            </main>
+    </div>
+
+
+    <footer>
+        <p>&copy; 2024 TripRecomendator - by :
+            <a href="https://42born2code.slack.com/team/U05337QNJJ3" target="_blank">jmartos-</a>, 
+            <a href="https://42born2code.slack.com/team/U05RBQXFK1D" target="_blank">juan-ant</a>&nbsp&
+            <a href="https://42born2code.slack.com/team/U06TM45JS0Z" target="_blank">sternero</a>
+            </p>
+    </footer>
+
+    <script type="module" src="script.js"></script>
+</body>
+</html>

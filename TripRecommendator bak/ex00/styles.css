@@ -1,0 +1,121 @@
+/* Estilos generales */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: 
+ #f7dfdf;
+}
+
+
+
+/* Cabecera */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: auto;
+    text-align: center;
+    z-index: 1; /* Para asegurarnos de que otros elementos no lo cubran */
+}
+
+/* Cuerpo */
+main {
+    padding: auto;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Formulario de búsqueda */
+#search-form {
+    display: flex;
+    justify-content: center;
+}
+
+#search-input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 300px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Mapa */
+#map {
+    height: 400px;
+    margin-top: 20px;
+}
+
+/* Lista de resultados */
+#results-list {
+    list-style: none;
+    padding: 0;
+}
+
+#results-list li {
+    margin-bottom: 10px;
+}
+
+/* Pie de página */
+footer {
+    position: fixed; /* Add this line */
+    bottom: 0; /* Add this line */
+    left: 0; /* Add this line */
+    width: 100%; /* Maintain full width */
+    background-color: #4CAF50;
+    text-align: center;
+    padding: auto;
+}
+
+.container {
+    flex: 1;
+    display: flex;
+}
+
+.sidebar {
+    width: 200px; /* Ajusta el ancho según tus necesidades */
+    background-color: #02ba02;
+    padding: 20px;
+    overflow-y: auto; /* Agrega una barra de desplazamiento si el contenido es muy largo */
+}
+
+main {
+    flex: 1;
+    overflow-y: auto; /* Agrega una barra de desplazamiento si el contenido es muy largo */
+    text-align: justify;
+    text-decoration-color: #4CAF50;
+    width: 98%;
+    height: auto;
+    padding: auto;
+}
+
+a {
+    color: #a4a3a3; /* Establece el color del texto del enlace a blanco */
+    text-decoration: none; /* Quita la línea subrayada por defecto */
+  }
+  
+  a:hover {
+    text-decoration: underline; /* Agrega una línea subrayada al pasar el ratón por encima */
+  }
+  
+  a:visited {
+    color: #3b3838; /* Mantiene el color blanco incluso después de haber sido visitado */
+  }
