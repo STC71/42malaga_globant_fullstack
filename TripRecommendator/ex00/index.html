@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TripRecomendator - Encuentra tu próximo viaje</title>
+    <link rel="stylesheet" href="css/styles.css">
+
+    <script type="importmap">
+        {
+          "imports": {
+            "@google/generative-ai": "https://esm.run/@google/generative-ai"
+          }
+        }
+      </script>
+
+</head>
+<body>
+    <header>
+        <h1>TripRecomendator</h1>
+        <nav>
+            </nav>
+    </header>
+        <main>
+            <div id="app">
+                <div class="bigdiv">
+                    <div id="content">
+                        <div class="basic_box">
+                            <div class="inside_box_two">
+                                <p>Your destiny?<br><br> 
+                                    <input type="text" id="promp1" class="input_on_div" placeholder="Enter first prompt">
+                                </p>
+                                <button id="generate-button" class="chat-form-button">Surprise me</button><br><br>
+                            </div>
+                        </div>
+                        <div id="response-container" class="inside_box" style="display: none;"></div>
+                    </div>
+                </div>
+            </div>
+            
+            </main>
+    </div>
+    <footer>
+        <p>&copy; 2024 TripRecomendator - by :
+            <a href="https://42born2code.slack.com/team/U05337QNJJ3" target="_blank">jmartos-</a>, 
+            <a href="https://42born2code.slack.com/team/U05RBQXFK1D" target="_blank">juan-ant</a>&nbsp&
+            <a href="https://42born2code.slack.com/team/U06TM45JS0Z" target="_blank">sternero</a>
+            </p>
+    </footer>
+    <iframe
+    paddi
+    height="400"
+    style="border:0"
+    loading="lazy"
+    allowfullscreen
+    referrerpolicy="no-referrer-when-downgrade"
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3198.9782438642897!2d-4.439913861114255!3d36.69906069362654!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd72f82aac626d6b%3A0x74f9a7cc8986e70d!2sTabacalera%2C%20Carretera%20de%20C%C3%A1diz%2C%20M%C3%A1laga!5e0!3m2!1ses!2ses!4v1729865561166!5m2!1ses!2ses">
+    </iframe>
+    <script type="module" src="javascript/script.js"></script>
+</body>
+</html>
