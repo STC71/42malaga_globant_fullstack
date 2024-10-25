@@ -1,37 +1,40 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Globify</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>42Globify</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
-  <header>
-    <h1 class="encabezado-green">My Globify</h1>
+    <header class="header_top">
+        <h1 class="encabezado-green">My Globify</h1>
+    
+        <button id="loginBtn">Iniciar Sesión</button>
+        <button style="display: none;" id="logoutBtn">Cerrar Sesión</button>
+    
+    </header> 
+    <br></br>
+    <br></br>
+    <br></br>
+    <div class="flow_container">
+        <div class="container_div" id="profile-section">
+        </div>
+        <div id="playlist-section">
+        </div>
 
-    <button id="loginBtn">Iniciar Sesión</button>
-    <button id="logoutBtn">Cerrar Sesión</button>
-
-  </header> 
-
-    <main>
-
-    <nav id="menu">
-      <ul>
-        <li><a href="#" id="inicio">Inicio</a></li>
-        <li><a href="#" id="favoritos">Favoritos</a></li>
-        <li><a href="#" id="listas">Listas de Reproducción</a></li>
-      </ul>
-
-    </main>
-  <footer>
-	<p>© 2020 My Globify by: 		
-    <a href = "https://42born2code.slack.com/team/U05337QNJJ3">jmartos-</a>, 
-		<a href = "https://42born2code.slack.com/team/U05RBQXFK1D">juan-ant</a>&nbsp&
-		<a href = "https://42born2code.slack.com/team/U06TM45JS0Z">sternero</a>
-	</p>
+        </div>
+    <footer class="rep_box">
+        <iframe src="./html/music.html"></iframe>
     </footer>
-  <script src="script.js"></script>
+    <footer class="footer_down">
+        <p>© 2024 My Globify by: 		
+        <a href = "https://42born2code.slack.com/team/U05337QNJJ3">jmartos-</a>, 
+            <a href = "https://42born2code.slack.com/team/U05RBQXFK1D">juan-ant</a>&nbsp&
+            <a href = "https://42born2code.slack.com/team/U06TM45JS0Z">sternero</a>
+        </p>
+        </footer>
+    <script src="./javascript/script.js"></script>
 </body>
 </html>

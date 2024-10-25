@@ -1,0 +1,318 @@
+/* GENERAL */
+
+html {
+    background-color: rgb(25, 25, 26);
+    color: rgb(20, 131, 24);
+}
+
+body {
+  margin: 0;
+}
+
+/* CONTAINERS */
+
+iframe {
+    border-color: black;
+    height: 70px;
+    width: 80vw;
+    align-self: center;
+    border: 0cap;
+}
+
+#playlist-section::-webkit-scrollbar {
+    display: none;
+}
+
+#playlist-section {
+    margin-left: 1vw;
+    grid-column: 1;
+    grid-row: 2;
+    height: 60vh;
+    width: 80vw;
+    background-color: rgb(25, 25, 26);
+    border-radius: 20px;
+    overflow:scroll;
+    align-content: center;
+}
+
+#playlist-section div{
+  margin-left: 1vw;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  background-color: rgb(38, 38, 38);
+  width: 78vw;
+  border-radius: 20px;
+  display: flex;
+  height: 80px;
+}
+
+#playlist-section div:hover {
+  background-color: rgb(66, 66, 66);
+}
+
+#playlist-section img{
+  border-radius: 20px;
+  padding-left: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  width: 70px;
+  height: 70px;
+}
+
+#playlist-section div h4 {
+    padding-left: 10px;
+    font-size: 20px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.rep_box {
+  color: white;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 45px;
+}
+
+#profile-section  {
+    grid-column: 15;
+    grid-row: 1;
+    font-size: 9px;
+    display: flex;
+    align-content: center;
+    margin-right: auto;
+}
+
+@media (max-width: 1150px) {
+    #profile-section{
+      grid-column: 14;
+    }
+}
+
+@media (max-width: 800px) {
+  #profile-section{
+    grid-column: 15;
+  }
+  #profile-section h2{
+    display: none;
+  }
+}
+
+@media (max-width: 550px) {
+  #profile-section{
+    grid-column: 15; 
+  }
+  #profile-section h2{
+    display: none;
+  }
+}
+
+
+
+#profile-section div{
+  vertical-align: middle;
+  position:relative;
+  align-content: center;
+  size: auto;
+}
+
+#profile-section img {
+    border-radius: 100px;
+    width: 50px;
+    height: 50px;
+}
+
+#profile-section h2 {
+    align-content: center;
+    padding-right: 8px;
+    text-align: center;
+}
+
+
+.font_container {
+    background-color: rgb(42, 42, 42);
+    color: rgb(45, 147, 48);
+}
+
+.container_div {
+    color: rgb(45, 147, 48);
+    margin: 0.6em;
+    min-width: 50px;
+    min-height: 50px;
+}
+
+.flow_container {
+  display: grid;
+  grid-template-columns: repeat(16, 6.2vw);
+  grid-template-rows: repeat(16, 4.4vh);
+  border-radius: 20px 0 0 20px;
+  height: 70vh;
+  background-color: rgb(42, 42, 42);
+  margin-left: 1vw;
+}
+
+/* REPRODUCTOR */
+  
+.player {
+    background-color: #181818;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%; /* Ocupa el 100% del ancho */
+    height: 90px; /* Altura similar al reproductor de Spotify */
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #282828;
+    z-index: 1000;
+}
+  
+#current-song {
+    font-size: 16px;
+    color: #b3b3b3; /* Texto en gris */
+    margin-bottom: 15px;
+}
+  
+audio {
+    width: 100%;
+    margin-top: 15px;
+}
+  
+.controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+  
+.button_rep {
+    background-color: #1db954; /* Verde Spotify */
+    color: white;
+    border: none;
+    border-radius: 50%;
+    padding: 10px;
+    margin: 2px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+  
+.button_rep:hover {
+    background-color: #1ed760; /* Verde más claro al pasar el mouse */
+}
+
+.button_rep:focus {
+    outline: none;
+}
+  
+#play-btn, #pause-btn {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    font-size: 16px;
+}
+  
+#prev-btn, #next-btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+  
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    margin-top: 20px;
+}
+  
+ul li {
+    padding: 10px;
+    cursor: pointer;
+    color: #b3b3b3;
+    border-bottom: 1px solid #404040; /* Divider en las canciones */
+    transition: background-color 0.3s, color 0.3s;
+}
+  
+ul li:hover {
+    background-color: #333333;
+    color: white;
+}
+  
+ul li.active {
+    background-color: #1db954; /* La canción activa está resaltada */
+    color: white;
+}
+
+/* sergio*/
+
+.header_top *, .footer_down * {
+  margin: 0;
+  padding: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+@media (max-width: 430px) {
+  nav ul {
+    flex-direction: column;
+    display: none;
+  }
+
+  nav ul.show {
+    display: flex;
+  }
+}
+
+.header_top {
+  background-color: #333;
+  padding: 1rem;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header_top *{
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+#content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer_down {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer_down button, .header_top button {
+  background-color: #1aa34a;
+  color: white;
+  border: none;
+  width: 100px;
+  cursor: pointer;
+}
+
+.header_top button {
+  margin-right: 4vw;
+}
+
+button:hover {
+  background-color: #1aa34a;
+}
+
+.encabezado-green {
+    color: rgb(3, 172, 90);
+}
+  
